@@ -3,17 +3,21 @@ import React from 'react';
 import Logo from './Logo';
 
 const Hero = () => (
-  <div className="hero my-5 text-center" data-testid="hero">
-    <Logo testId="hero-logo" />
-    <h1 className="mb-4" data-testid="hero-title">
-      La Loma Mexico
-    </h1>
 
-    <p className="lead" data-testid="hero-lead">
-      This is a sample application that demonstrates an authentication flow for a Regular Web App, using{' '}
-      <a href="https://nextjs.org">Next.js</a>
-    </p>
+  <section id="hero" className="d-flex align-items-center">
+
+  <div className="container" data-aos="zoom-out" data-aos-delay="100">
+    <div className="row">
+      <div className="col-xl-6">
+        <h1>Santa Maria La Loma </h1>
+        <h2>Mexico</h2>
+        <a href="#about" className="btn-get-started scrollto">Bienvenido</a>
+      </div>
+    </div>
   </div>
+
+</section>
+
 );
 
 export default Hero;

@@ -4,24 +4,48 @@ import Head from 'next/head';
 
 import NavBar from './NavBar';
 import Footer from './Footer';
+import { Header } from './Header';
 
 const Layout = ({ children }) => (
   <>
     <Head>
-      <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossOrigin="anonymous"
-      />
-      <link rel="stylesheet" href="https://cdn.auth0.com/js/auth0-samples-theme/1.0/css/auth0-theme.min.css" />
+   
+  <link href="assets/img/favicon.png" rel="icon"/>
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"/>
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+  <link href="assets/css/style.css" rel="stylesheet"/>
+
+
+
       <title>Next.js Sample App</title>
     </Head>
-    <main id="app" className="d-flex flex-column h-100" data-testid="layout">
-      <NavBar />
-      <Container className="flex-grow-1 mt-5">{children}</Container>
-      <Footer />
-    </main>
+    <Header/>
+      <main id="main">{children}</main>
+
+
+
+
+<Footer/>
+
+<a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
+
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+
   </>
 );
 
